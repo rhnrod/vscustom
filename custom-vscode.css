@@ -1,0 +1,240 @@
+:root {
+    --status-border-top-color: transparent;
+}
+
+/* Comments */
+.mtk5 {
+    font-family: 'Geist Mono', monospace !important;
+    color: #77a09c !important
+}
+
+/* Sidebar */
+.part.side-bar {
+    box-shadow: 0px 0px 50px rgba(0,0,0,.25);
+}
+
+/* File Explorer Selected Item */
+.monaco-list.list_id_1 .monaco-list-row.selected {
+    background-color: #4f5971 !important;
+    opacity: 1 !important;
+    border-top: 1px #727b90 solid;
+    border-bottom: 1px #727b90 solid;
+}
+
+/* List item label name */
+.monaco-list.list_id_1 .monaco-list-row.selected .label-name {
+    color: #fff !important;
+    opacity: 1 !important;
+}
+
+/* File Explorer Item Label */
+.monaco-tree .monaco-tree-row .label-name,
+.monaco-list .monaco-list-row
+.monaco-icon-label .label-name {
+    font-family: 'Geist Mono', monospace !important;
+    font-size: 16px !important;
+    font-weight: 400 !important;
+    color: #FFF !important;
+}
+
+.explorer-item-edited {
+    font-family: Geist Mono !important;
+    font-size: 16px !important;
+  }
+
+/* Sidebar top shadow */
+.monaco-scrollable-element>.shadow.top {
+    box-shadow: 0px 0px 10px rgba(0,0,0,.75) !important;
+    top: -3px !important;
+}
+
+/* Sidebar title */
+.composite.title {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-items: center !important;
+}
+.composite.title h2 {
+    font-weight: bold !important;
+    font-size: 12px !important;
+    text-transform: uppercase;
+    color: #9ababc !important;
+}
+
+/* Scroll Bar */
+.slider {
+    position: absolute !important;
+    right: 1px !important;
+    width: 1px !important;
+    background: #bc9abc !important;
+    left: auto !important;
+}
+
+
+/* Tooltip box style */
+.monaco-editor-hover,
+.monaco-hover {
+    background-color: #101010 !important;
+    padding: 4px !important;
+    backdrop-filter: blur(3px) !important;
+    border: none !important;
+    outline: 0px !important;
+}
+
+/* Search Label */
+.search-label {
+    font-family: 'Geist Mono' !important;
+    font-size: 14px !important;
+    color: #fff;
+    display: block;
+}
+
+#workbench\.parts\.titlebar > div > div.titlebar-right >
+ div.action-toolbar-container > div > div > ul > li:nth-child(1) > a {
+ width: 30px !important;
+ height: 30px !important;
+ border-radius: 50% !important;
+ background-image: url('/home/rhuan/.config/vs-code/avatar-vscode.png') !important;
+ background-size: 100% !important;
+ margin-right: 12px !important;
+ 
+ &::before{ 
+    content: '' !important;
+ }
+
+}
+
+#workbench\.parts\.activitybar > div > div:nth-child(3) > div > ul > li:nth-child(1) > a {
+ width: 40px !important;
+ height: 40px !important;
+ left: 4px !important;
+ border-radius: 50% !important;
+ background-image: url('/home/rhuan/.config/vs-code/avatar-vscode.png') !important;
+ background-size: 100% !important;
+ margin-right: 12px !important;
+ 
+ &::before{ 
+    content: '' !important;
+ }
+}
+
+#workbench\.parts\.titlebar > div > div.titlebar-right > div.action-toolbar-container > 
+div > div > ul > li:nth-child(1) > div.badge.compact > div{
+    top: 20px !important;
+    right: 6px !important;
+    background-color: rgb(255,97,97) !important;
+}
+
+#status\.problems > a> span.codicon.codicon-error {
+    color:  rgb(254, 55, 55) !important;
+}
+
+#status\.problems > a> .codicon.codicon-warning {
+    color: rgb(255, 215, 97) !important;
+}
+
+#yokanochko\.git-diff-counter > a > span.codicon.codicon-diff-added {
+    color:  rgb(200, 255, 97) !important;
+}
+
+#yokanochko\.git-diff-counter > a > span.codicon.codicon-diff-removed  {
+    color:  rgb(255,97,97) !important;
+}
+
+/* #Codeium\.codeium > a {
+    background-color:  rgb(88,229,187) !important;
+    color: #282828 !important;
+} */
+
+.monaco-workbench .part.titlebar.inactive>.titlebar-container>.titlebar-center>
+.window-title>.command-center .action-item.command-center-center {
+    position: absolute !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+}
+
+/* Command Palette */
+.quick-input-widget {
+    transform: translateY(-50%) !important;
+    top: 50% !important;
+    box-shadow: 0px 8px 32px rgba(0, 0, 0, .35) !important;
+    padding: 10px 10px 18px 10px !important;
+    backdrop-filter: blur(3px) !important;
+    border-radius: 20px !important;
+}
+
+/* Remove background for lists */
+.monaco-list-rows {
+    background: transparent !important;
+}
+
+/* Command palette text input */
+.quick-input-filter .monaco-inputbox {
+    border-radius: 12px !important;
+    padding: 16px !important;
+    border: none !important;
+    font-family: "Geist Mono" !important;
+    font-size: 16px !important;
+    margin-bottom: 16px !important;
+}
+
+#command-blur {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .15);
+    top: 0;
+    left: 0;
+    backdrop-filter: blur(8px);
+}
+
+#workbench\.parts\.titlebar > div > div.titlebar-left > a {
+    background-image: url('/home/rhuan/.config/vs-code/vscode-monocrhome.png') !important;
+}
+
+.monaco-workbench .part.editor>.content .editor-group-container.active>.title .tabs-container>.tab.active {
+    z-index: 6;
+    top:0;
+    height: 3px;
+    background-color: var(--tab-border-top-color);
+    background-image: linear-gradient(to right, rgb(219, 246, 194), rgb(37, 165, 170), rgb(226, 240, 177));
+    background-size: 200% auto;
+    animation: borderTopActive 4s linear infinite
+}
+
+@keyframes borderTopActive {
+    to {
+        background-position: 200%;
+    }
+}
+
+.monaco-workbench .part.editor>.content .editor-group-container>.title .tabs-container>.tab>.tab-actions {
+    height: 35px !important;
+    
+    &:hover {
+        color: rgb(255,97,97);
+    }
+
+}
+
+#workbench\.parts\.editor > div.content > div > div > div > div > div.monaco-scrollable-element >
+div.split-view-container > div > div > div.title.tabs.show-file-icons.title-border-bottom >
+div.tabs-and-actions-container.tabs-border-bottom > div.monaco-scrollable-element >
+div.tabs-container > div > div.tab-actions > div > ul > li > a:hover {
+    background: none;
+}
+
+body > div.file-icons-enabled.enable-motion.monaco-workbench.linux.chromium.nopanel.noauxiliarybar.vs-dark.BeardedBear-beardedtheme-themes-bearded-theme-monokai-black-json.nosidebar.maximized>
+div.monaco-grid-view > div > div > div.monaco-scrollable-element > div.split-view-container > div:nth-child(3) > div > div > div.monaco-scrollable-element > div.split-view-container > div.split-view-view.visible > div > div > div.sash-container > div {
+    display: none !important;
+}
+
+footer#workbench\.parts\.statusbar::after {
+    --status-border-top-color: transparent;
+}
+
+#status\.editor\.inputMode {
+    background-color:  rgb(229, 184, 88) !important;
+    color: #282828 !important;
+}
