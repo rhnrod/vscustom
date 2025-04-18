@@ -190,7 +190,7 @@ div > div > ul > li:nth-child(1) > div.badge.compact > div{
 }
 
 #workbench\.parts\.titlebar > div > div.titlebar-left > a {
-    background-image: url('/home/rhuan/.config/vs-code/vscode-monocrhome.png') !important;
+    background-image: url('/C:/Users/rhuan/.config/vscustom/vscode-monocrhome.png') !important;
 }
 
 .monaco-workbench .part.editor>.content .editor-group-container.active>.title .tabs-container>.tab.active {
